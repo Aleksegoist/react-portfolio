@@ -9,6 +9,6 @@
   li {
     @apply px-4;
     @apply cursor-pointer; 
-    @apply hover:text-[#FF9623] transition duration-150 ease-out md:ease-in;
+    
   }
 }
