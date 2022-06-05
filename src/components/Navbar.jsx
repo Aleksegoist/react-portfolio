@@ -90,7 +90,7 @@ const Navbar = () => {
               className='flex justify-between items-center w-full text-gray-200'
               href='/'
             >
-              Resume <BsFillPersonLinesFill size={30} />
+              CV <BsFillPersonLinesFill size={30} />
             </a>
           </li>
         </ul>
