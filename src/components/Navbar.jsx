@@ -4,6 +4,7 @@ import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { Link } from 'react-scroll';
+import Contact from '../components/Contact';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -104,24 +105,31 @@ const Navbar = () => {
           </li>
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-500 bg-[#24292F]'>
             <a
+              rel='noopener noreferrer'
+              target='_blank'
               className='flex justify-between items-center w-full text-gray-200'
-              href='/'
+              href='https://github.com/Aleksegoist'
             >
               GitHub <FaGithub size={30} />
             </a>
           </li>
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-500 bg-[#10834d]'>
-            <a
+            <Link
+              to='contact'
+              smooth={true}
+              duration={500}
               className='flex justify-between items-center w-full text-gray-200'
-              href='/'
+              href='contact'
             >
               Email <HiOutlineMail size={30} />
-            </a>
+            </Link>
           </li>
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-500 bg-[#d42727]'>
             <a
+              rel='noopener noreferrer'
+              target='_blank'
               className='flex justify-between items-center w-full text-gray-200'
-              href='/'
+              href='https://i.ibb.co/xM9xmk3/CV-Oleksandr-Yehorov.jpg'
             >
               CV <BsFillPersonLinesFill size={30} />
             </a>
